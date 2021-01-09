@@ -1,0 +1,109 @@
+/* ------------------------------------------------------------------------------------------------------
+ My Task Board CSS File
+ Written by: Shahar Avshalom
+ Version: 1.0
+ March 2019
+------------------------------------------------------------------------------------------------------- */
+
+/* A title is defined using CSS3 ---------------------------------------------------------------------- */
+h1 {
+  font-family: "Cherry Cream Soda", cursive;
+  font-style: italic;
+}
+
+/* Wood background CSS -------------------------------------------------------------------------------- */
+body,
+html {
+  /* The image used */
+  background-image: url("../images/woodBackground_1.jpeg");
+  height: 100%;
+  margin: 0;
+}
+
+/* Form notebook page background CSS -------------------------------------------------------------------------------- */
+.bgForm {
+  /* The image used */
+  background-image: url("../images/notebook-paper.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+/* Tasks CSS ---------------------------------------------------------------------------------------- */
+#Display {
+  margin: 10px;
+  padding: 15px;
+}
+
+.card {
+  /* The image used */
+  background-image: url("../images/41anryizsd4wa06.jpg");
+  width: 100%;
+  margin: 5%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card-header {
+  height: 50px;
+}
+
+.card-body {
+  height: 100px;
+  overflow: scroll;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.card-footer {
+  height: 60px;
+  font-family: "Times New Roman", Times, serif;
+
+  /* Full Responsive Font */
+  /* font-size: 1.5vw; */
+  font-size: large;
+  text-align: center;
+  overflow: scroll;
+  padding: 1%;
+}
+
+/* Fade in CSS -------------------------------------------------------------------------------------- */
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Show the Close button only when the user hovers over it -------------------------------------------- */
+button {
+  display: none;
+  background-color: Transparent;
+  border: none;
+  float: right;
+}
+
+.card:hover button {
+  display: block;
+}
+
+/* End ------------------------------------------------------------------------------------------------ */
