@@ -190,7 +190,7 @@ const dictionary = {
     English: {
         myTaskBoard: "My Task Board",
         chooseLanguage: "Choose a language:",
-        backToAvshalomsProjects: "Back to Avshaloms projects",
+        backToAvshalomsProjects: "Back to Avshalom's projects",
         taskTitle: "Task title",
         addTaskBtn: "Add Task",
         resetTaskBtn: "Reset Task"
