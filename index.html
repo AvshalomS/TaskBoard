@@ -43,9 +43,21 @@
           </div>
         </div>
 
-        <!-- Back button -->
+        <!-- Choose a language -->
         <nav class="navbar navbar-light bg-light">
           <i class="far fa-clipboard"></i>
+          <form class="form-inline">
+            <select class="form-control" name="language" id="htmlLanguage" onchange="changeLanguage()">
+              <option value="English">English</option>
+              <option value="Hebrew">עברית</option>
+            </select>
+          </form>
+        </nav>
+
+        <!-- Back button -->
+        <nav class="navbar navbar-light bg-light">
+          <!-- <i class="far fa-clipboard"></i> -->
+          <i></i>
           <a id="backToAvshalomsProjects" href="https://avshaloms.github.io" class="btn btn-info float-right">Back to
             Avshalom's projects</a>
         </nav>
@@ -59,6 +71,9 @@
               <textarea class="form-control" id="myTaskTitle" placeholder="Task title" required></textarea>
             </div>
 
+            <div class="form-row">
+              <p id="targetTaskTime" style="text-align: center; width: 100%;"></p>
+            </div>
             <div class="form-row">
               <div class="form-group col-md-8">
                 <input type="date" class="form-control" id="myTaskDate" required>
@@ -83,15 +98,7 @@
         <!-- Form Area End. -->
       </div>
       <!-- Indenting the right side -->
-      <div class="col-sm-2">
-        <div style="padding: 5%; text-align: center;">
-          <label for="cars" id="chooseLanguage">Choose a language:</label>
-          <select class="form-control" name="language" id="htmlLanguage" onchange="changeLanguage()">
-            <option value="English">English</option>
-            <option value="Hebrew">עברית</option>
-          </select>
-        </div>
-      </div>
+      <div class="col-sm-2"></div>
 
     </div>
 

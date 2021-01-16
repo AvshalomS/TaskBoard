@@ -168,9 +168,10 @@ function changeLanguage() {
         element.innerText = dictionary[len]['myTaskBoard']
     });
 
-    document.getElementById("chooseLanguage").innerText = dictionary[len]['chooseLanguage']
+    // document.getElementById("chooseLanguage").innerText = dictionary[len]['chooseLanguage']
     document.getElementById("backToAvshalomsProjects").innerText = dictionary[len]['backToAvshalomsProjects']
     document.getElementById("myTaskTitle").setAttribute("placeholder", `${dictionary[len]['taskTitle']}`)
+    document.getElementById("targetTaskTime").innerText = dictionary[len]['targetTaskTime']
     document.getElementById("addTaskBtn").innerText = dictionary[len]['addTaskBtn']
     document.getElementById("resetTaskBtn").innerText = dictionary[len]['resetTaskBtn']
 
@@ -185,13 +186,15 @@ const dictionary = {
         backToAvshalomsProjects: "חזור לפרוייקטים של אבשלום",
         taskTitle: "תיאור המשימה",
         addTaskBtn: "הוסף משימה",
+        targetTaskTime: "יעד זמן לביצוע המשימה",
         resetTaskBtn: "אפס משימה"
     },
     English: {
         myTaskBoard: "My Task Board",
         chooseLanguage: "Choose a language:",
         backToAvshalomsProjects: "Back to Avshalom's projects",
-        taskTitle: "Task title",
+        taskTitle: "Task description ",
+        targetTaskTime: "Target time for task completion",
         addTaskBtn: "Add Task",
         resetTaskBtn: "Reset Task"
     }
